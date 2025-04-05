@@ -2,10 +2,11 @@ import streamlit as st
 import os
 import pandas as pd
 
-st.title("Application de visulisation de données")
+st.title("Application de visualisation de données")
 
 uploaded_file_sidebar = st.sidebar.file_uploader('Choissisez un fichier CSV', type='csv', key='sidebar')
 uploaded_file_main = st.file_uploader('Choissisez un fichier CSV', type='csv', key='main')
+
 
 uploaded_file = uploaded_file_sidebar if uploaded_file_sidebar is not None else uploaded_file_main
 
